@@ -1,4 +1,74 @@
-body {
-  background: lightgreen; }
+.wrapper {
+  min-height: 100%; }
+
+.header {
+  background: url(../img/header.jpg) no-repeat;
+  background-size: 100%;
+  height: 700px; }
+
+.fon-menu {
+  background-color: rgba(255, 255, 255, 0.3);
+  background-size: 100%;
+  height: 80px; }
+
+.logo {
+  background: url(../img/logo.png) no-repeat;
+  background-size: 100%;
+  width: 170px;
+  height: 20px;
+  margin-top: 28px;
+  cursor: pointer; }
+
+.phone {
+  padding-top: 27px;
+  font-size: 18px;
+  color: #fff; }
+
+.nav li {
+  color: #fff;
+  height: 100%;
+  font-size: 18px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 27px 15px;
+  font-family: Open Sans; }
+  .nav li:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+
+.nav img {
+  margin-left: 4px; }
+
+.cities {
+  position: relative;
+  transition: 0.3s all; }
+  .cities:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.3s all; }
+  .cities:hover .menu__cities {
+    opacity: 1;
+    top: 100%; }
+
+.cities .menu__cities {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -9999em;
+  width: 200%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.5s opacity; }
+
+.cities .menu__cities li {
+  padding: 2px 5px; }
+
+.content {
+  height: 700px; }
+
+.footer {
+  height: 646px;
+  background: url(../img/footer.jpg) no-repeat;
+  background-size: 100%; }
 
 /*# sourceMappingURL=main.css.map */
