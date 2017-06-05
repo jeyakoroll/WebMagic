@@ -19,7 +19,7 @@
   background-size: 100%;
   width: 170px;
   height: 20px;
-  margin-top: 28px;
+  margin: 28px 25px 0 0;
   cursor: pointer;
 }
 
@@ -27,6 +27,20 @@
   padding-top: 28px;
   font-size: 18px;
   color: #fff;
+}
+
+.phone:before,
+.phone:after {
+  content: " ";
+  display: table;
+}
+
+.phone:after {
+  clear: both;
+}
+
+.phone__num {
+  float: right;
 }
 
 .nav li {
@@ -148,7 +162,7 @@ button.my-btn:hover {
 }
 
 .header-anchor {
-  margin-top: 140px;
+  margin-top: 190px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -365,6 +379,11 @@ button.my-btn:hover {
   border: none;
 }
 
+.under-footer {
+  height: 350px;
+  width: 100%;
+}
+
 .under-footer:before,
 .under-footer:after {
   content: " ";
@@ -375,14 +394,104 @@ button.my-btn:hover {
   clear: both;
 }
 
-.under-footer__img {
+.under-footer__block {
+  position: relative;
+  float: left;
   width: 25%;
   height: 350px;
+}
+
+.under-footer__block:hover .under-footer__animate {
+  top: 5%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.under-footer__img {
+  width: 100%;
+  height: 350px;
   float: left;
+}
+
+.under-footer__animate {
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  padding: 10px 30px 40px;
+  color: #fff;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  top: -9999em;
+  transition: opacity .5s;
+}
+
+.under-footer__caption {
+  font: 14px Open Sans;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.under-footer__hyphen {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.under-footer__paragraph {
+  font: 14px Open Sans;
+  margin-top: 20px;
 }
 
 .footer {
   height: 70px;
   background-color: #232323;
   background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.copyright {
+  margin-top: 5px;
+  color: #8D8A85;
+  font: 17px Open Sans;
+}
+
+.my-btn-form {
+  width: 250px;
+  height: 50px;
+  color: #fff;
+  font: 20px Open Sans;
+  border-radius: 0;
+  border: none;
+  margin-right: 8px;
+}
+
+input.form-control-my {
+  border-radius: 0;
+  border: none;
+  color: #777570;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+input.form-control-my:active {
+  border: none;
+}
+
+.form-group-my {
+  background: rgba(0, 0, 0, 0.8);
 }
