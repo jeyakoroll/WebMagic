@@ -1,5 +1,5 @@
 // Миксины
-@mixin clearfix() {
+@mixin clearfix {
   &:before,
   &:after {
     content: " "; // 1
@@ -47,6 +47,10 @@ $cursor: pointer;
 	padding-top: 28px;
 	font-size: 18px;
 	color: $textWhite;
+}
+
+.phone__num {
+
 }
 
 .nav li {
@@ -99,7 +103,7 @@ $cursor: pointer;
 // Заголовок и поиск в шапке
 .top-caption {
 	color: $textWhite;
-	margin-top: 90px;
+	margin-top: 135px;
 	font: 40px Open Sans;
   display: flex;
   flex-direction: row;
@@ -136,7 +140,7 @@ $cursor: pointer;
   justify-content: center;
   align-content: stretch;
   align-items: flex-start;
-  margin-top: 55px;
+  margin-top: 45px;
 }
 div.my-form-group {
 	position: relative;
@@ -180,7 +184,7 @@ button.my-btn {
 	width: 60px;
 	height: 60px;
 	position: fixed;
-	top: 450px;
+	top: 600px;
 	right: 40px;
 	z-index: 100;
 	cursor: $cursor;
@@ -198,13 +202,140 @@ button.my-btn {
 
 // Тело
 .content {
-	height: 700px;
+	height: 300px;
+}
+// Первый блок с проэктом
+.some-project {
+	font: 40px Open Sans;
+	color: #2E4C88;
+	margin-top: 55px;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+.no-project {
+	margin-top: 30px;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+.about-project {
+	font: 18px Open Sans;
+	margin-top: 45px;
+	color: #262626;
+	line-height: 20px;
+}
+.about-project__elem {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+// Стать участником
+.find-content {
+	height: 305px;
+	width: 100%;
+	@include clearfix;
+}
+.find-properties {
+	float: left;
+	height: 305px;
+	width: 50%;
+	background-color: #E0D8E3;
+	@include clearfix;
+}
+.find-properties__wrap {
+	width: 570px;
+	height: 305px;
+	float: right;
+	@include clearfix;
+}
+.find-properties__img {
+	margin: 90px 45px 0 15px;
+	float: left;
+}
+.find-properties__h4 {
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font: 23px Open Sans;
+	float: left;
+}
+.find-properties__p {
+	font: 17px Open Sans;
+	float: left;
+}
+.find-properties__btn {
+	width: 185px;
+	margin-top: 50px;
+	border-radius: 0;
+	font: 16px Open Sans;
+	float: left;
+	&:hover {
+		border: none;
+	}
+}
+// Отправить проэкт
+.find-buyers {
+	float: left;
+	height: 305px;
+	width: 50%;
+	background-color: #B2CCD6;
+	@include clearfix;
+}
+.find-buyers__wrap {
+	width: 570px;
+	height: 305px;
+	padding-left: 70px;
+	float: left;
+	@include clearfix;
+}
+.find-buyers__img {
+	margin: 90px 65px 0 0;
+	float: left;
+}
+.find-buyers__h4 {
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font: 23px Open Sans;
+	float: left;
+}
+.find-buyers__p {
+	font: 17px Open Sans;
+	float: left;
+}
+.find-buyers__btn {
+	width: 185px;
+	margin-top: 27px;
+	float: left;
+	margin-left: 165px;
+	border-radius: 0;
+	font: 16px Open Sans;
+	&:hover {
+		border: none;
+	}
+}
+// Картинки над подвалом
+.under-footer {
+	@include clearfix;
+}
+.under-footer__img {
+	width: 25%;
+	height: 350px;
+	float: left;
 }
 
 
 // Подвал
 .footer {
-	height: 646px;
-	background: url(../img/footer.jpg) no-repeat;
+	height: 70px;
+	background-color: #232323;
 	background-size: 100%;
 }
