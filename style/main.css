@@ -20,23 +20,22 @@
   cursor: pointer; }
 
 .phone {
-  padding-top: 27px;
+  padding-top: 28px;
   font-size: 18px;
   color: #fff; }
 
 .nav li {
   color: #fff;
   height: 100%;
-  font-size: 18px;
   list-style-type: none;
   display: inline-block;
   padding: 27px 15px;
-  font-family: Open Sans; }
+  font: 18px Open Sans; }
   .nav li:hover {
     text-decoration: underline;
     cursor: pointer; }
 
-.nav img {
+.nav__img {
   margin-left: 4px; }
 
 .cities {
@@ -60,8 +59,95 @@
   opacity: 0;
   transition: 0.5s opacity; }
 
-.cities .menu__cities li {
+.cities .menu__li {
   padding: 2px 5px; }
+
+.top-caption {
+  color: #fff;
+  margin-top: 90px;
+  font: 40px Open Sans;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start; }
+
+.top-link {
+  color: #fff;
+  margin-top: 20px;
+  font: 20px Open Sans;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start; }
+
+.top-link__anchor {
+  font-weight: bold;
+  color: #2E4C88; }
+  .top-link__anchor:hover {
+    cursor: pointer; }
+
+.form-search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+  margin-top: 55px; }
+
+div.my-form-group {
+  position: relative; }
+
+input.my-form-control {
+  padding-left: 46px;
+  border-radius: 0;
+  border: none;
+  font: 20px Open Sans; }
+
+.my-form-group__lupa {
+  position: absolute;
+  top: 17px;
+  left: 17px; }
+
+button.my-btn {
+  border-radius: 0;
+  font: 24px Open Sans; }
+  button.my-btn:hover {
+    border: none; }
+
+.header-anchor {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-end; }
+
+.header-anchor__img:hover {
+  cursor: pointer; }
+
+.call-back {
+  background: url(../img/telephone_fon.jpg);
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 450px;
+  right: 40px;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center; }
+  .call-back:hover {
+    background: rgba(0, 0, 0, 0.3); }
 
 .content {
   height: 700px; }
