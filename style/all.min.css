@@ -217,7 +217,7 @@ button.my-btn:hover {
 }
 
 .no-project {
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -228,7 +228,7 @@ button.my-btn:hover {
 
 .about-project {
   font: 18px Open Sans;
-  margin-top: 45px;
+  margin-top: 40px;
   color: #262626;
   line-height: 20px;
 }
@@ -476,6 +476,10 @@ button.my-btn:hover {
   font: 17px Open Sans;
 }
 
+.modal-body-my {
+  margin-top: 5px;
+}
+
 .my-btn-form {
   width: 250px;
   height: 50px;
@@ -483,13 +487,13 @@ button.my-btn:hover {
   font: 20px Open Sans;
   border-radius: 0;
   border: none;
-  margin-right: 8px;
+  margin-right: 13px;
 }
 
 input.form-control-my {
   border-radius: 0;
   border: none;
-  color: #777570;
+  color: #7C7873;
   background: rgba(0, 0, 0, 0.4);
 }
 
