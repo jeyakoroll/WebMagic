@@ -19,6 +19,7 @@ $cursor: pointer;
 // Стили для шапки
 .wrapper {
 	min-height: 100%;
+	min-width: 1920px;
 }
 
 .header {
@@ -39,20 +40,23 @@ $cursor: pointer;
 	width: 170px;
 	height: 20px;
 	// убрать маргин
-	margin: 28px 25px 0 0;
+	margin: 29px 45px 0 0;
 
 	cursor: $cursor;
 }
 
 .phone {
-	padding-top: 28px;
+	padding: 29px 0;
 	font-size: 18px;
 	color: $textWhite;
+	width: 123px;
+	float: right;
 	@include clearfix;
 }
 
-.phone__num {
-	float: right;
+.nav {
+	width: 710px;
+	font: 18px Open Sans;
 }
 
 .nav li {
@@ -117,7 +121,7 @@ $cursor: pointer;
 
 .top-link {
 	color: $textWhite;
-	margin-top: 20px;
+	margin-top: 15px;
 	font: 20px Open Sans;
   display: flex;
   flex-direction: row;
@@ -167,7 +171,7 @@ button.my-btn {
 }
 // Ссылка внизу шапки
 .header-anchor {
-	margin-top: 190px;
+	margin-top: 245px;
 	display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -235,11 +239,11 @@ button.my-btn {
 }
 .about-project__elem {
 	display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: center;
 }
 // Стать участником
 .find-content {
@@ -384,12 +388,12 @@ button.my-btn {
 }
 
 
-
 // Подвал
 .footer {
 	height: 70px;
 	background-color: #232323;
 	background-size: 100%;
+	min-width: 1920px;
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -1,5 +1,6 @@
 .wrapper {
   min-height: 100%;
+  min-width: 1920px;
 }
 
 .header {
@@ -19,14 +20,16 @@
   background-size: 100%;
   width: 170px;
   height: 20px;
-  margin: 28px 25px 0 0;
+  margin: 29px 45px 0 0;
   cursor: pointer;
 }
 
 .phone {
-  padding-top: 28px;
+  padding: 29px 0;
   font-size: 18px;
   color: #fff;
+  width: 123px;
+  float: right;
 }
 
 .phone:before,
@@ -39,8 +42,9 @@
   clear: both;
 }
 
-.phone__num {
-  float: right;
+.nav {
+  width: 710px;
+  font: 18px Open Sans;
 }
 
 .nav li {
@@ -106,7 +110,7 @@
 
 .top-link {
   color: #fff;
-  margin-top: 20px;
+  margin-top: 15px;
   font: 20px Open Sans;
   display: flex;
   flex-direction: row;
@@ -162,7 +166,7 @@ button.my-btn:hover {
 }
 
 .header-anchor {
-  margin-top: 190px;
+  margin-top: 245px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -457,6 +461,7 @@ button.my-btn:hover {
   height: 70px;
   background-color: #232323;
   background-size: 100%;
+  min-width: 1920px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
