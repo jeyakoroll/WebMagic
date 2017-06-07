@@ -422,12 +422,11 @@ button.my-btn {
 input.form-control-my {
 	border-radius: 0;
 	border: none;
-	color: #7C7873;
-	background: rgba(0, 0, 0, .4);
+	border-bottom: 1px solid #5F5D58;
+	color: #fff;
+	background: transparent;
 	&:active {
-		border: none;
+		border-bottom: 1px solid #fff;
 	}
 }
-.form-group-my {
-	background: rgba(0, 0, 0, .8);
-}
+

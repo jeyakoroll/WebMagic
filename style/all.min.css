@@ -493,14 +493,11 @@ button.my-btn:hover {
 input.form-control-my {
   border-radius: 0;
   border: none;
-  color: #7C7873;
-  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #5F5D58;
+  color: #fff;
+  background: transparent;
 }
 
 input.form-control-my:active {
-  border: none;
-}
-
-.form-group-my {
-  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #fff;
 }
