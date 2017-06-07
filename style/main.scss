@@ -15,6 +15,7 @@ $textBlue: #2E4C88;
 $textGrey: #262626;
 $textBlack: #3E3F3F;
 $cursor: pointer;
+$fontFamily: Open Sans;
 
 // Стили для шапки
 .wrapper {
@@ -56,7 +57,8 @@ $cursor: pointer;
 
 .nav {
 	width: 710px;
-	font: 18px Open Sans;
+	font-size: 18px;
+	font-family: $fontFamily;
 }
 
 .nav li {
@@ -65,7 +67,8 @@ $cursor: pointer;
 	list-style-type: none;
 	display: inline-block;
 	padding: 27px 15px;
-	font: 18px Open Sans;
+	font-size: 18px;
+	font-family: $fontFamily;
 	&:hover {
 		text-decoration: underline;
 		cursor: $cursor;
@@ -110,7 +113,8 @@ $cursor: pointer;
 .top-caption {
 	color: $textWhite;
 	margin-top: 135px;
-	font: 40px Open Sans;
+	font-size: 40px;
+	font-family: $fontFamily;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -122,7 +126,8 @@ $cursor: pointer;
 .top-link {
 	color: $textWhite;
 	margin-top: 15px;
-	font: 20px Open Sans;
+	font-size: 20px;
+	font-family: $fontFamily;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -154,8 +159,13 @@ div.my-form-group {
 input.my-form-control {
 	padding-left: 46px;
 	border-radius: 0;
-	border: none;
-	font: 20px Open Sans;
+	font-size: 20px;
+	font-family: $fontFamily;
+	&:focus {
+		
+    outline: 0 !important;
+    outline-offset: 0 !important;
+	} 
 }
 .my-form-group__lupa {
 	position: absolute;
@@ -164,7 +174,8 @@ input.my-form-control {
 }
 button.my-btn {
 	border-radius: 0;
-	font: 24px Open Sans;
+	font-size: 24px;
+	font-family: $fontFamily;
 	&:hover {
 		border: none;
 	}
@@ -212,7 +223,8 @@ button.my-btn {
 }
 // Первый блок с проэктом
 .some-project {
-	font: 40px Open Sans;
+	font-size: 40px;
+	font-family: $fontFamily;
 	color: #2E4C88;
 	margin-top: 55px;
 	display: flex;
@@ -232,7 +244,8 @@ button.my-btn {
   align-items: center;
 }
 .about-project {
-	font: 18px Open Sans;
+	font-size: 18px;
+	font-family: $fontFamily;
 	margin-top: 40px;
 	color: #262626;
 	line-height: 20px;
@@ -271,18 +284,21 @@ button.my-btn {
 .find-properties__h4 {
 	margin-top: 50px;
 	margin-bottom: 15px;
-	font: 23px Open Sans;
+	font-size: 23px;
+	font-family: $fontFamily;
 	float: left;
 }
 .find-properties__p {
-	font: 17px Open Sans;
+	font-size: 17px;
+	font-family: $fontFamily;
 	float: left;
 }
 .find-properties__btn {
 	width: 185px;
 	margin-top: 50px;
 	border-radius: 0;
-	font: 16px Open Sans;
+	font-size: 16px;
+	font-family: $fontFamily;
 	float: left;
 	&:hover {
 		border: none;
@@ -310,11 +326,13 @@ button.my-btn {
 .find-buyers__h4 {
 	margin-top: 50px;
 	margin-bottom: 15px;
-	font: 23px Open Sans;
+	font-size: 23px;
+	font-family: $fontFamily;
 	float: left;
 }
 .find-buyers__p {
-	font: 17px Open Sans;
+	font-size: 17px;
+	font-family: $fontFamily;
 	float: left;
 }
 .find-buyers__btn {
@@ -323,7 +341,8 @@ button.my-btn {
 	float: left;
 	margin-left: 165px;
 	border-radius: 0;
-	font: 16px Open Sans;
+	font-size: 16px;
+	font-family: $fontFamily;
 	&:hover {
 		border: none;
 	}
@@ -364,7 +383,8 @@ button.my-btn {
 	transition: opacity .5s;
 }
 .under-footer__caption {
-	font: 14px Open Sans;
+	font-size: 14px;
+	font-family: $fontFamily;
 	font-weight: bold;
 	display: flex;
     flex-direction: row;
@@ -383,7 +403,8 @@ button.my-btn {
     align-items: center;
 }
 .under-footer__paragraph {
-	font: 14px Open Sans;
+	font-size: 14px;
+	font-family: $fontFamily;
 	margin-top: 20px;
 }
 
@@ -404,7 +425,8 @@ button.my-btn {
 .copyright {
 	margin-top: 5px;
 	color: #8D8A85;
-	font: 17px Open Sans;
+	font-size: 17px;
+	font-family: $fontFamily;
 }
 // Обратная связь
 .modal-body-my {
@@ -414,7 +436,8 @@ button.my-btn {
 	width: 250px;
 	height: 50px;
 	color: #fff;
-	font: 20px Open Sans;
+	font-size: 20px;
+	font-family: $fontFamily;
 	border-radius: 0;
 	border: none;
 	margin-right: 13px;

@@ -8,3 +8,24 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   modal.find('.modal-title').text('Обратная связь')
   modal.find('.modal-body input').val(recipient)
 })
+// Навигация к проэкту
+$(document).ready(function() {
+	$('.header-anchor__img').on('click', function(e) {
+		e.preventDefault();
+
+		showSection($(this).attr('href'), true);
+	});
+
+	showSection(window.location.hash, false);
+}); // - > ready_project
+
+function showSection(section, isAnimate) {
+	let 
+		direction = section.replace(/#/, ''),
+		reqSection = $('.content').filter('[data-section="' + direction +'"]'),
+		reqSectionPos = reqSection.offset().top;
+
+	if(isAnimate) {
+		$('body, html').animate({scrollTop: reqSectionPos}, 500);
+	}
+}

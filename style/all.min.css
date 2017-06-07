@@ -44,7 +44,8 @@
 
 .nav {
   width: 710px;
-  font: 18px Open Sans;
+  font-size: 18px;
+  font-family: Open Sans;
 }
 
 .nav li {
@@ -53,7 +54,8 @@
   list-style-type: none;
   display: inline-block;
   padding: 27px 15px;
-  font: 18px Open Sans;
+  font-size: 18px;
+  font-family: Open Sans;
 }
 
 .nav li:hover {
@@ -99,7 +101,8 @@
 .top-caption {
   color: #fff;
   margin-top: 135px;
-  font: 40px Open Sans;
+  font-size: 40px;
+  font-family: Open Sans;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -111,7 +114,8 @@
 .top-link {
   color: #fff;
   margin-top: 15px;
-  font: 20px Open Sans;
+  font-size: 20px;
+  font-family: Open Sans;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -146,8 +150,13 @@ div.my-form-group {
 input.my-form-control {
   padding-left: 46px;
   border-radius: 0;
-  border: none;
-  font: 20px Open Sans;
+  font-size: 20px;
+  font-family: Open Sans;
+}
+
+input.my-form-control:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
 }
 
 .my-form-group__lupa {
@@ -158,7 +167,8 @@ input.my-form-control {
 
 button.my-btn {
   border-radius: 0;
-  font: 24px Open Sans;
+  font-size: 24px;
+  font-family: Open Sans;
 }
 
 button.my-btn:hover {
@@ -205,7 +215,8 @@ button.my-btn:hover {
 }
 
 .some-project {
-  font: 40px Open Sans;
+  font-size: 40px;
+  font-family: Open Sans;
   color: #2E4C88;
   margin-top: 55px;
   display: flex;
@@ -227,7 +238,8 @@ button.my-btn:hover {
 }
 
 .about-project {
-  font: 18px Open Sans;
+  font-size: 18px;
+  font-family: Open Sans;
   margin-top: 40px;
   color: #262626;
   line-height: 20px;
@@ -298,12 +310,14 @@ button.my-btn:hover {
 .find-properties__h4 {
   margin-top: 50px;
   margin-bottom: 15px;
-  font: 23px Open Sans;
+  font-size: 23px;
+  font-family: Open Sans;
   float: left;
 }
 
 .find-properties__p {
-  font: 17px Open Sans;
+  font-size: 17px;
+  font-family: Open Sans;
   float: left;
 }
 
@@ -311,7 +325,8 @@ button.my-btn:hover {
   width: 185px;
   margin-top: 50px;
   border-radius: 0;
-  font: 16px Open Sans;
+  font-size: 16px;
+  font-family: Open Sans;
   float: left;
 }
 
@@ -361,12 +376,14 @@ button.my-btn:hover {
 .find-buyers__h4 {
   margin-top: 50px;
   margin-bottom: 15px;
-  font: 23px Open Sans;
+  font-size: 23px;
+  font-family: Open Sans;
   float: left;
 }
 
 .find-buyers__p {
-  font: 17px Open Sans;
+  font-size: 17px;
+  font-family: Open Sans;
   float: left;
 }
 
@@ -376,7 +393,8 @@ button.my-btn:hover {
   float: left;
   margin-left: 165px;
   border-radius: 0;
-  font: 16px Open Sans;
+  font-size: 16px;
+  font-family: Open Sans;
 }
 
 .find-buyers__btn:hover {
@@ -432,7 +450,8 @@ button.my-btn:hover {
 }
 
 .under-footer__caption {
-  font: 14px Open Sans;
+  font-size: 14px;
+  font-family: Open Sans;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -453,7 +472,8 @@ button.my-btn:hover {
 }
 
 .under-footer__paragraph {
-  font: 14px Open Sans;
+  font-size: 14px;
+  font-family: Open Sans;
   margin-top: 20px;
 }
 
@@ -473,7 +493,8 @@ button.my-btn:hover {
 .copyright {
   margin-top: 5px;
   color: #8D8A85;
-  font: 17px Open Sans;
+  font-size: 17px;
+  font-family: Open Sans;
 }
 
 .modal-body-my {
@@ -484,7 +505,8 @@ button.my-btn:hover {
   width: 250px;
   height: 50px;
   color: #fff;
-  font: 20px Open Sans;
+  font-size: 20px;
+  font-family: Open Sans;
   border-radius: 0;
   border: none;
   margin-right: 13px;
