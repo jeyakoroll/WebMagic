@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>WebMagic</title>
 	<!-- CEO -->
 	<meta name="description" content="Тестовая задача для веб студии WebMagic">
@@ -22,26 +23,45 @@
 		<div class="fon-menu">
 			<div class="container">
 				<div class="row">
-					<div class="logo col-lg-2"></div>
-					<nav class="nav col-lg-8">
-						<ul class="menu">
-							<li>О нас</li>
-							<li>Статьи</li>
-							<li>Новости</li>
-							<li class="cities">Города<img class="nav__img" src="img/arrow_menu.png" alt="">
-								<ul class="menu__cities">
-									<li class="menu__li">Херсон</li>
-									<li class="menu__li">Ивано-Франковск</li>
-									<li class="menu__li">Одесса</li>
-								</ul>
-							</li>
-							<li>Для прессы</li>
-							<li>Партнеры</li>
-						</ul>
+					<div class="col-lg-2 col-md-2 nopadding col-sm-2 col-xs-3 small-logo">
+						<div class="logo"></div>
+					</div>
+					<div class=" col-lg-8 col-md-8 col-sm-8 col-xs-3 small-menu">
+						<nav class="navbar navbar-default ">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse navbar-fon small-menu" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
+					        <li><a href="#">О нас <span class="sr-only">(current)</span></a></li>
+					        <li><a href="#">Статьи</a></li>
+					        <li><a href="#">Новости</a></li>
+					        <li class="dropdown cities">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Города<img class="nav__img" src="img/arrow_menu.png" alt=""></a>
+					          <ul class="dropdown-menu menu__cities">
+					            <li><a href="#" class="menu__li">Херсон</a></li>
+					            <li><a href="#" class="menu__li">Ивано-Франковск</a></li>
+					            <li><a href="#" class="menu__li">Одесса</a></li>
+					          </ul>
+					        </li>
+					        <li><a href="#">Для прессы</a></li><li>
+					        <a href="#">Партнеры</a></li>
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
 					</nav>
-					<div class="phone col-lg-2">
+					</div>
+					<div class="phone col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
 						<p class="phone__num">(093) 123 45 67</p>
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -113,7 +133,7 @@
 	</section>
 	<!-- Стать участником -->
 	<section class="find-content">
-		<aside class="find-properties">
+		<aside class="find-properties col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<section class="find-properties__wrap">
 				<img class="find-properties__img" src="img/properties.png" alt="">
 				<h4 class="find-properties__h4">Find properties</h4>
@@ -123,7 +143,7 @@
 			</section>
 		</aside>
 		<!-- Отправить проэкт -->
-		<aside class="find-buyers">
+		<aside class="find-buyers col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<section class="find-buyers__wrap">
 				<img class="find-buyers__img" src="img/buyers.png" alt="">
 				<h4 class="find-buyers__h4">Find Buyers</h4>
@@ -152,38 +172,47 @@
 	</section>
 	<!-- Картинки над подвалом -->
 	<section class="under-footer">
+	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 nopadding">
 		<div class="under-footer__block">
 			<img class="under-footer__img" src="img/footer_1.jpg" alt="">
 			<div class="under-footer__animate">
 				<h3 class="under-footer__caption">PAPERCLIPS</h3>
 				<div class="under-footer__hyphen"><img src="img/hyphen.png" alt=""></div>
-				<p class="under-footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis</p>
+				<p class="under-footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			</div>
 		</div>
+	</div>
+	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 nopadding">
 		<div class="under-footer__block">
 			<img class="under-footer__img" src="img/footer_2.jpg" alt="">
 			<div class="under-footer__animate">
 				<h3 class="under-footer__caption">PAPERCLIPS</h3>
 				<div class="under-footer__hyphen"><img src="img/hyphen.png" alt=""></div>
-				<p class="under-footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis</p>
+				<p class="under-footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			</div>
 		</div>
+	</div>
+	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 nopadding">
 		<div class="under-footer__block">
 			<img class="under-footer__img" src="img/footer_3.jpg" alt="">
 			<div class="under-footer__animate">
 				<h3 class="under-footer__caption">PAPERCLIPS</h3>
 				<div class="under-footer__hyphen"><img src="img/hyphen.png" alt=""></div>
-				<p class="under-footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis</p>
+				<p class="under-footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			</div>
 		</div>
+	</div>
+	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 nopadding">
 		<div class="under-footer__block">
 			<img class="under-footer__img" src="img/footer_4.jpg" alt="">
 			<div class="under-footer__animate">
 				<h3 class="under-footer__caption">PAPERCLIPS</h3>
 				<div class="under-footer__hyphen"><img src="img/hyphen.png" alt=""></div>
-				<p class="under-footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis</p>
+				<p class="under-footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			</div>
 		</div>
+	</div>
+		
 	</section>
 </div>
 <!-- Подвал -->

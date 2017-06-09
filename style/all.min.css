@@ -1,34 +1,41 @@
+@charset "UTF-8";
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .wrapper {
   min-height: 100%;
-  min-width: 1920px;
 }
 
 .header {
   background: url("../img/header.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 700px;
 }
 
 .fon-menu {
   background-color: rgba(255, 255, 255, 0.3);
-  background-size: 100%;
+  background-size: cover;
   height: 80px;
 }
 
 .logo {
   background: url("../img/logo.png") no-repeat;
   background-size: 100%;
-  width: 170px;
+  max-width: 170px;
   height: 20px;
-  margin: 29px 45px 0 0;
+  padding: 0 60px 0 0;
+  margin-top: 30px;
   cursor: pointer;
 }
 
 .phone {
-  padding: 29px 0;
-  font-size: 18px;
+  padding: 30px 0;
+  font-size: 16px;
   color: #fff;
-  width: 123px;
+  width: 113px;
   float: right;
 }
 
@@ -43,28 +50,39 @@
 }
 
 .nav {
-  width: 710px;
+  width: 630px;
   font-size: 18px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
 }
 
-.nav li {
-  color: #fff;
-  height: 100%;
-  list-style-type: none;
-  display: inline-block;
-  padding: 27px 15px;
-  font-size: 18px;
-  font-family: Open Sans;
+.navbar-default {
+  background-color: transparent;
 }
 
-.nav li:hover {
-  text-decoration: underline;
-  cursor: pointer;
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
 }
 
-.nav__img {
-  margin-left: 4px;
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.menu__cities {
+  padding: 10px 0;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/*по наведению*/
+
+.navbar-default {
+  border: none;
 }
 
 .cities {
@@ -77,32 +95,48 @@
   transition: 0.3s all;
 }
 
-.cities:hover .menu__cities {
-  opacity: 1;
-  top: 100%;
+.nav ul li .menu__li {
+  padding: 2px 15px;
 }
 
-.cities .menu__cities {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: -9999em;
+.nav li:hover {
+  text-decoration: underline;
+}
+
+.small-menu {
+  padding-left: 33px;
+}
+
+/*мои стили*/
+
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.2);
   width: 200%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transition: 0.5s opacity;
 }
 
-.cities .menu__li {
-  padding: 2px 5px;
+.nav li {
+  color: #fff;
+  height: 100%;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: UbuntuRegular;
+}
+
+.nav li a {
+  padding: 31px 15px;
+  color: #fff !important;
+}
+
+.nav__img {
+  margin-left: 4px;
 }
 
 .top-caption {
   color: #fff;
   margin-top: 135px;
   font-size: 40px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -115,7 +149,7 @@
   color: #fff;
   margin-top: 15px;
   font-size: 20px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -147,14 +181,19 @@ div.my-form-group {
   position: relative;
 }
 
-input.my-form-control {
+.modal-body-my .form-control-my:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+.my-form-group .my-form-control {
   padding-left: 46px;
   border-radius: 0;
   font-size: 20px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
 }
 
-input.my-form-control:focus {
+.my-form-group .my-form-control:focus {
   outline: 0 !important;
   outline-offset: 0 !important;
 }
@@ -168,7 +207,7 @@ input.my-form-control:focus {
 button.my-btn {
   border-radius: 0;
   font-size: 24px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
 }
 
 button.my-btn:hover {
@@ -216,7 +255,7 @@ button.my-btn:hover {
 
 .some-project {
   font-size: 40px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   color: #2E4C88;
   margin-top: 55px;
   display: flex;
@@ -239,7 +278,7 @@ button.my-btn:hover {
 
 .about-project {
   font-size: 18px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   margin-top: 40px;
   color: #262626;
   line-height: 20px;
@@ -311,13 +350,13 @@ button.my-btn:hover {
   margin-top: 50px;
   margin-bottom: 15px;
   font-size: 23px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   float: left;
 }
 
 .find-properties__p {
   font-size: 17px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   float: left;
 }
 
@@ -326,7 +365,7 @@ button.my-btn:hover {
   margin-top: 50px;
   border-radius: 0;
   font-size: 16px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   float: left;
 }
 
@@ -377,13 +416,13 @@ button.my-btn:hover {
   margin-top: 50px;
   margin-bottom: 15px;
   font-size: 23px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   float: left;
 }
 
 .find-buyers__p {
   font-size: 17px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   float: left;
 }
 
@@ -394,7 +433,7 @@ button.my-btn:hover {
   margin-left: 165px;
   border-radius: 0;
   font-size: 16px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
 }
 
 .find-buyers__btn:hover {
@@ -418,8 +457,7 @@ button.my-btn:hover {
 
 .under-footer__block {
   position: relative;
-  float: left;
-  width: 25%;
+  width: 100%;
   height: 350px;
 }
 
@@ -451,7 +489,7 @@ button.my-btn:hover {
 
 .under-footer__caption {
   font-size: 14px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -473,7 +511,7 @@ button.my-btn:hover {
 
 .under-footer__paragraph {
   font-size: 14px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   margin-top: 20px;
 }
 
@@ -481,7 +519,7 @@ button.my-btn:hover {
   height: 70px;
   background-color: #232323;
   background-size: 100%;
-  min-width: 1920px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -494,7 +532,7 @@ button.my-btn:hover {
   margin-top: 5px;
   color: #8D8A85;
   font-size: 17px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
 }
 
 .modal-body-my {
@@ -506,7 +544,7 @@ button.my-btn:hover {
   height: 50px;
   color: #fff;
   font-size: 20px;
-  font-family: Open Sans;
+  font-family: UbuntuRegular;
   border-radius: 0;
   border: none;
   margin-right: 13px;
@@ -522,4 +560,238 @@ input.form-control-my {
 
 input.form-control-my:active {
   border-bottom: 1px solid #fff;
+}
+
+.navbar-toggle {
+  float: none;
+  padding: 10px 10px;
+  margin-top: 22px;
+}
+
+@media all and (max-width: 1300px) {
+  .under-footer__paragraph {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .under-footer__caption {
+    margin-top: 10px;
+  }
+
+  .under-footer__hyphen {
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .small-menu {
+    padding-left: 15px;
+  }
+
+  .find-content {
+    height: 610px;
+  }
+
+  .find-properties {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .find-buyers__wrap {
+    padding-left: 25px;
+  }
+
+  .find-buyers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .nav {
+    width: 100%;
+  }
+
+  .nav li {
+    font-size: 0.8em;
+  }
+
+  .nav li a {
+    padding: 31px 6px;
+  }
+
+  .phone {
+    width: 85px;
+  }
+
+  .phone__num {
+    padding-top: 4px;
+    font-size: 0.7em;
+  }
+
+  .top-caption {
+    font-size: 2.2em;
+  }
+
+  .navbar-form .form-control {
+    width: 20em;
+    height: 2.5em;
+  }
+
+  .btn-default {
+    width: 7em;
+    height: 2.1em;
+  }
+}
+
+.find-properties__btn {
+  width: 12em;
+  height: 3em;
+}
+
+.find-buyers__btn {
+  width: 12em;
+  height: 3em;
+}
+
+@media all and (max-width: 768px) {
+  .nav li a {
+    padding: 0px 6px;
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 10px;
+  }
+
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border: none;
+  }
+
+  .menu__cities {
+    padding: 5px 0;
+    min-width: 120px;
+  }
+
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu > li > a {
+    padding: 5px 15px 5px 15px;
+  }
+
+  .nav {
+    width: 90%;
+  }
+
+  .small-logo {
+    position: absolute;
+    left: 40%;
+  }
+
+  .small-menu {
+    position: absolute;
+    left: 1%;
+  }
+
+  .phone {
+    position: absolute;
+    right: 2%;
+  }
+
+  .top-caption {
+    font-size: 2.2em;
+    text-align: center;
+    width: 45%;
+    margin-left: 27%;
+  }
+
+  .form-search {
+    margin-top: 25px;
+  }
+
+  .top-link {
+    margin-top: 20px;
+  }
+
+  .header-anchor {
+    margin-top: 220px;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+
+  .navbar-toggle {
+    background-color: transparent;
+  }
+
+  .navbar-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .under-footer__caption {
+    margin-top: 50px;
+  }
+
+  .call-back {
+    top: 550px;
+    right: 30px;
+  }
+
+  .navbar-form {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 677px) {
+  .header-anchor {
+    margin-top: 180px;
+  }
+}
+
+@media all and (max-width: 605px) {
+  .btn-default {
+    width: 5em;
+    font-size: 1em;
+    height: 2.1em;
+  }
+
+  .navbar-form .form-control {
+    width: 12em;
+    height: 2.5em;
+  }
+
+  .find-properties__btn {
+    width: 11em;
+    font-size: 0.8em;
+    height: 3em;
+  }
+
+  .find-buyers__btn {
+    width: 11em;
+    font-size: 0.8em;
+    height: 3em;
+  }
+
+  .find-properties__p {
+    font-size: 15px;
+  }
+
+  .find-buyers__p {
+    font-size: 15px;
+  }
 }

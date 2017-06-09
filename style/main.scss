@@ -9,104 +9,136 @@
     clear: both;
   }
 }
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 // Переменные
 $textWhite: #fff;
 $textBlue: #2E4C88;
 $textGrey: #262626;
 $textBlack: #3E3F3F;
 $cursor: pointer;
-$fontFamily: Open Sans;
+$fontFamily: UbuntuRegular;
 
 // Стили для шапки
 .wrapper {
 	min-height: 100%;
-	min-width: 1920px;
+	// min-width: 1920px;
 }
 
 .header {
 	background: url(../img/header.jpg) no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	height: 700px;
 }
 
 .fon-menu {
 	background-color: rgba(255, 255, 255, 0.3);
-	background-size: 100%;
+	background-size: cover;
 	height: 80px;
 }
 
 .logo {
 	background: url(../img/logo.png) no-repeat;
 	background-size: 100%;
-	width: 170px;
+	max-width: 170px;
 	height: 20px;
 	// убрать маргин
-	margin: 29px 45px 0 0;
-
+	padding: 0 60px 0 0;
+	margin-top: 30px;
 	cursor: $cursor;
 }
 
 .phone {
-	padding: 29px 0;
-	font-size: 18px;
+	padding: 30px 0;
+	font-size: 16px;
 	color: $textWhite;
-	width: 123px;
+	width: 113px;
 	float: right;
 	@include clearfix;
 }
 
 .nav {
-	width: 710px;
+	width: 630px;
 	font-size: 18px;
 	font-family: $fontFamily;
 }
 
+.navbar-default {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.menu__cities {
+    padding: 10px 0;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+/*по наведению*/
+.navbar-default {
+	border: none;
+}
+
+.cities {
+	position: relative;
+	transition: 0.3s all;
+}
+
+.cities:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: 0.3s all;
+}
+
+.nav ul li .menu__li {
+	padding: 2px 15px;
+}
+
+.nav li:hover {
+	text-decoration: underline;
+}
+
+.small-menu {
+	padding-left: 33px;
+}
+
+/*мои стили*/
+
+.dropdown-menu {
+	background: rgba(0, 0, 0, 0.2);
+	width: 200%;
+}
+
 .nav li {
-	color: $textWhite;
+	color: #fff;
 	height: 100%;
 	list-style-type: none;
 	display: inline-block;
-	padding: 27px 15px;
 	font-size: 18px;
 	font-family: $fontFamily;
-	&:hover {
-		text-decoration: underline;
-		cursor: $cursor;
-	}
+}
+
+.nav li a {
+	padding: 31px 15px;
+	color: #fff !important;
 }
 
 .nav__img {
 	margin-left: 4px;
-}
-// Выпадающее меню
-.cities {
-	position: relative;
-	transition: 0.3s all;
-	&:hover {
-	background-color: rgba(0, 0, 0, 0.2);
-	transition: 0.3s all;
-	}
-	&:hover .menu__cities {
-		opacity: 1;
-		top: 100%;
-	}
-}
-
-.cities .menu__cities {
-	position: absolute;
-	display: block;
-	// height: 100%;
-	left: 0;
-	top: -9999em;
-	width: 200%;
-	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.2);
-	opacity: 0;
-	transition: 0.5s opacity;
-}
-
-.cities .menu__li {
-	padding: 2px 5px;
 }
 
 // Заголовок и поиск в шапке
@@ -156,17 +188,61 @@ $fontFamily: Open Sans;
 div.my-form-group {
 	position: relative;
 }
-input.my-form-control {
+.modal-body-my .form-control-my:focus {
+	  outline: 0px !important;
+    -webkit-appearance:none;
+}
+.my-form-group .my-form-control {
 	padding-left: 46px;
 	border-radius: 0;
 	font-size: 20px;
 	font-family: $fontFamily;
 	&:focus {
-		
     outline: 0 !important;
     outline-offset: 0 !important;
 	} 
 }
+
+.form-control-my:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+
+.form-group-my:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+
 .my-form-group__lupa {
 	position: absolute;
 	top: 17px;
@@ -355,8 +431,7 @@ button.my-btn {
 }
 .under-footer__block {
 	position: relative;
-	float: left;
-	width: 25%;
+	width: 100%;
 	height: 350px;
 	&:hover .under-footer__animate {
 		top: 5%;
@@ -414,7 +489,8 @@ button.my-btn {
 	height: 70px;
 	background-color: #232323;
 	background-size: 100%;
-	min-width: 1920px;
+	width: 100%;
+	// min-width: 1920px;
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -453,3 +529,225 @@ input.form-control-my {
 	}
 }
 
+// Сендвич меню
+.navbar-toggle {
+	float: none;
+	padding: 10px 10px;
+  margin-top: 22px;
+}
+
+// Адаптивка
+
+@media all and (max-width: 1300px) {
+	.under-footer__paragraph {
+		font-size: 14px;
+		margin-top: 15px;
+	}
+	.under-footer__caption {
+		margin-top: 10px;
+	}
+	.under-footer__hyphen {
+		margin-top: 20px;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.small-menu {
+		padding-left: 15px;
+	}
+	.find-content {
+		height: 610px;
+	}
+	.find-properties {
+		width: 100%;
+			display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	}
+	.find-buyers__wrap {
+		padding-left: 25px;
+	}
+
+	.find-buyers {
+		width: 100%;
+			display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	}
+
+	// .find-buyers__wrap {
+	// 	width: 50%;
+	// }
+}
+
+@media all and (max-width: 1000px) {
+	.nav {
+		width: 100%;
+	}
+	.nav li {
+		font-size: 0.8em;
+	}
+	.nav li a {
+		padding: 31px 6px;
+	}
+	.phone {
+		width: 85px;
+	}
+	.phone__num {
+		padding-top: 4px;
+		font-size: 0.7em;
+	}
+	.top-caption {
+		font-size: 2.2em;
+	}
+
+	// Поиск
+	.navbar-form .form-control {
+		width: 20em;
+		height: 2.5em;
+	}
+	.btn-default {
+		width: 7em;
+		height: 2.1em;
+	}
+}
+
+.find-properties__btn {
+	width: 12em;
+	height: 3em;
+}
+.find-buyers__btn {
+	width: 12em;
+	height: 3em;
+}
+
+// @media all and (max-width: 900px) {
+// 	.logo {
+// 		margin-top: 30px !important;
+// 	}
+// }
+
+@media all and (max-width: 768px) {
+	.nav li a {
+    padding: 0px 6px;
+	}
+	.navbar-nav .open .dropdown-menu>li>a {
+    line-height: 10px;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+	}
+	.menu__cities {
+    padding: 5px 0;
+    min-width: 120px;
+  }
+  .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
+    padding: 5px 15px 5px 15px;
+	}
+	.nav {
+    width: 90%;
+	}
+	.small-logo {
+		position: absolute;
+		left: 40%;
+	}
+	.small-menu {
+		position: absolute;
+		left: 1%;
+	}
+	.phone {
+		position: absolute;
+		right: 2%;
+	}
+	// заголовок
+	.top-caption {
+		font-size: 2.2em;
+		text-align: center;
+    width: 45%;
+    margin-left: 27%;
+	}
+	.form-search {
+		margin-top: 25px;
+	}
+	.top-link {
+		margin-top: 20px;
+	}
+	// стрелка к первому проэкту
+	.header-anchor {
+		margin-top: 220px;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: #fff;
+	}
+
+	.navbar-toggle {
+		background-color: transparent; 
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.2); 
+		}
+	}
+
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	    background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.under-footer__caption {
+    margin-top: 50px;
+	}
+
+	.call-back {
+		top: 550px;
+    right: 30px;
+	}
+
+	.navbar-form {
+		margin-right: 0;
+	}
+
+}
+
+@media all and (max-width: 677px) {
+	.header-anchor {
+    margin-top: 180px;
+	}
+}
+
+@media all and (max-width: 605px) {
+	.btn-default {
+    width: 5em;
+    font-size: 1em;
+    height: 2.1em;
+	}
+
+	.navbar-form .form-control {
+    width: 12em;
+    height: 2.5em;
+	}
+
+	.find-properties__btn {
+    width: 11em;
+    font-size: 0.8em;
+    height: 3em;
+	}
+
+	.find-buyers__btn {
+    width: 11em;
+    font-size: 0.8em;
+    height: 3em;
+	}
+
+	.find-properties__p {
+		font-size: 15px;
+	}
+
+	.find-buyers__p {
+		font-size: 15px;
+	}
+
+}
