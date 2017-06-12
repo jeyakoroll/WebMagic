@@ -35,7 +35,7 @@
   padding: 30px 0;
   font-size: 16px;
   color: #fff;
-  width: 113px;
+  width: 114px;
   float: right;
 }
 
@@ -757,9 +757,13 @@ input.form-control-my:active {
   }
 }
 
+.modal-content {
+  margin: 150px auto;
+}
+
 @media all and (max-width: 677px) {
   .header-anchor {
-    margin-top: 180px;
+    margin-top: 200px;
   }
 }
 
@@ -793,5 +797,11 @@ input.form-control-my:active {
 
   .find-buyers__p {
     font-size: 15px;
+  }
+}
+
+@media all and (max-width: 565px) {
+  .header-anchor {
+    margin-top: 150px;
   }
 }
