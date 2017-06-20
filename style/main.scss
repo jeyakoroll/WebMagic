@@ -1,4 +1,4 @@
-// Миксины
+// Mixins
 @mixin clearfix {
   &:before,
   &:after {
@@ -16,7 +16,7 @@
 }
 
 
-// Переменные
+// Variables
 $textWhite: #fff;
 $textBlue: #2E4C88;
 $textGrey: #262626;
@@ -24,7 +24,7 @@ $textBlack: #3E3F3F;
 $cursor: pointer;
 $fontFamily: UbuntuRegular;
 
-// Стили для шапки
+// Styles for caps
 .wrapper {
 	min-height: 100%;
 	// min-width: 1920px;
@@ -47,7 +47,7 @@ $fontFamily: UbuntuRegular;
 	background-size: 100%;
 	max-width: 170px;
 	height: 20px;
-	// убрать маргин
+	// Remove margins
 	padding: 0 60px 0 0;
 	margin-top: 30px;
 	cursor: $cursor;
@@ -90,7 +90,7 @@ $fontFamily: UbuntuRegular;
 }
 
 
-/*по наведению*/
+//For guidance
 .navbar-default {
 	border: none;
 }
@@ -117,7 +117,7 @@ $fontFamily: UbuntuRegular;
 	padding-left: 33px;
 }
 
-/*мои стили*/
+//My styles
 
 .dropdown-menu {
 	background: rgba(0, 0, 0, 0.2);
@@ -142,7 +142,7 @@ $fontFamily: UbuntuRegular;
 	margin-left: 4px;
 }
 
-// Заголовок и поиск в шапке
+// Header and search in the header
 .top-caption {
 	color: $textWhite;
 	margin-top: 135px;
@@ -176,7 +176,7 @@ $fontFamily: UbuntuRegular;
 	cursor: $cursor;
 	}
 }
-// Поиск
+// Search
 .form-search {
 	display: flex;
   flex-direction: row;
@@ -217,7 +217,7 @@ button.my-btn {
 		border: none;
 	}
 }
-// Ссылка внизу шапки
+// Link at the bottom of the header
 .header-anchor {
 	margin-top: 245px;
 	display: flex;
@@ -232,7 +232,7 @@ button.my-btn {
     	cursor: $cursor;
     }
 }
-// Обратная связь
+// Feedback
 .call-back {
 	background: url(../img/telephone_fon.jpg) ;
 	width: 60px;
@@ -254,11 +254,11 @@ button.my-btn {
 }
 
 
-// Тело
+// Body
 .content {
 	height: 300px;
 }
-// Первый блок с проэктом
+// The first block with the project
 .some-project {
 	font-size: 40px;
 	font-family: $fontFamily;
@@ -280,6 +280,11 @@ button.my-btn {
   align-content: stretch;
   align-items: center;
 }
+.no-project__block {
+	width: 76px;
+	height: 6px;
+	background: #2E4C88;
+}
 .about-project {
 	font-size: 18px;
 	font-family: $fontFamily;
@@ -295,7 +300,7 @@ button.my-btn {
 	align-content: stretch;
 	align-items: center;
 }
-// Стать участником
+// Become a member
 .find-content {
 	height: 305px;
 	width: 100%;
@@ -341,7 +346,7 @@ button.my-btn {
 		border: none;
 	}
 }
-// Отправить проэкт
+// Send project
 .find-buyers {
 	float: left;
 	height: 305px;
@@ -384,7 +389,7 @@ button.my-btn {
 		border: none;
 	}
 }
-// Картинки над подвалом
+// Pictures above the basement
 .under-footer {
 	@include clearfix;
 	height: 350px;
@@ -445,7 +450,7 @@ button.my-btn {
 }
 
 
-// Подвал
+// Basement
 .footer {
 	height: 70px;
 	background-color: #232323;
@@ -465,7 +470,7 @@ button.my-btn {
 	font-size: 17px;
 	font-family: $fontFamily;
 }
-// Обратная связь
+// Feedback
 .modal-body-my {
 	margin-top: 5px;
 }
@@ -490,14 +495,14 @@ input.form-control-my {
 	}
 }
 
-// Сендвич меню
+// Sandwich menu
 .navbar-toggle {
 	float: none;
 	padding: 10px 10px;
   margin-top: 22px;
 }
 
-// Адаптивка
+// Adaptive
 
 @media all and (max-width: 1300px) {
 	.under-footer__paragraph {
@@ -568,7 +573,7 @@ input.form-control-my {
 		font-size: 2.2em;
 	}
 
-	// Поиск
+	// Search
 	.navbar-form .form-control {
 		width: 20em;
 		height: 2.5em;
@@ -626,7 +631,7 @@ input.form-control-my {
 		position: absolute;
 		right: 2%;
 	}
-	// заголовок
+	// Caption
 	.top-caption {
 		font-size: 2.2em;
 		text-align: center;
@@ -639,7 +644,7 @@ input.form-control-my {
 	.top-link {
 		margin-top: 20px;
 	}
-	// стрелка к первому проэкту
+	// Arrow to the first project
 	.header-anchor {
 		margin-top: 220px;
 	}
@@ -673,7 +678,7 @@ input.form-control-my {
 
 }
 
-// Форма обратной связи
+// Feedback form
 .modal-content {
 	margin: 150px auto;
 }
@@ -721,5 +726,55 @@ input.form-control-my {
 @media all and (max-width: 565px) {
 	.header-anchor {
     	margin-top: 150px;
+	}
+}
+// Blocks find prop and find buyers
+@media all and (max-width: 515px) {
+	.find-properties__img {
+    margin: 90px 25px 0 15px;
+    width: 25%;
+	}
+    .find-properties__p {
+    font-size: 1em;
+    width: 50%;
+    overflow: hidden;
+	}
+	.find-buyers__img {
+    margin: 90px 40px 0 -2%;
+    width: 20%;
+	}
+	.find-buyers__p {
+	font-size: 1em;
+    width: 50%;
+    overflow: hidden;
+	}
+	.find-buyers__btn {
+	margin: 5% 0 0 29%;
+	}
+	// .find-properties__p {
+ //    margin-left: 35%
+	// }
+}
+
+@media all and (max-width: 482px) {
+	.some-project {
+		font-size: 2em;
+	}
+	.about-project {
+		font-size: 1em;
+	}
+}
+
+@media all and (max-width: 482px) {
+	.find-buyers__h4 {
+		margin-top: 10%;
+	}
+}
+
+@media all and (max-width: 382px) {
+	.find-buyers__p {
+	font-size: 1em;
+    width: 50%;
+    overflow: hidden;
 	}
 }
