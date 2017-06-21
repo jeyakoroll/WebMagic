@@ -1,4 +1,4 @@
-// Попап bootstrap
+// Popap bootstrap
 $('#exampleModal').on('show.bs.modal', function (event) {
   let button = $(event.relatedTarget) // Button that triggered the modal
   let recipient = button.data('whatever') // Extract info from data-* attributes
@@ -8,7 +8,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   modal.find('.modal-title').text('Обратная связь')
   modal.find('.modal-body input').val(recipient)
 })
-// Навигация к проэкту
+// Navigation to the project
 $(document).ready(function() {
 	$('.header-anchor__img').on('click', function(e) {
 		e.preventDefault();

@@ -43,6 +43,7 @@ $fontFamily: UbuntuRegular;
 }
 
 .logo {
+	display: block;
 	background: url(../img/logo.png) no-repeat;
 	background-size: 100%;
 	max-width: 170px;
@@ -381,7 +382,7 @@ button.my-btn {
 	width: 185px;
 	margin-top: 27px;
 	float: left;
-	margin-left: 165px;
+	margin-left: 31%;
 	border-radius: 0;
 	font-size: 16px;
 	font-family: $fontFamily;
@@ -547,12 +548,28 @@ input.form-control-my {
     align-items: center;
 	}
 
+	.find-properties__img {
+		padding-left: 10%;
+	}
+
+	.find-buyers__img {
+		padding-left: 10%;
+	}
+
 	// .find-buyers__wrap {
 	// 	width: 50%;
 	// }
 }
 
 @media all and (max-width: 1000px) {
+
+	.find-properties__img {
+		padding-left: 5%;
+	}
+
+	.find-buyers__img {
+		padding-left: 5%;
+	}
 	.nav {
 		width: 100%;
 	}
@@ -593,11 +610,63 @@ input.form-control-my {
 	height: 3em;
 }
 
-// @media all and (max-width: 900px) {
-// 	.logo {
-// 		margin-top: 30px !important;
-// 	}
-// }
+@media all and (max-width: 961px) {
+
+	.find-buyers__wrap {
+		padding-left: 0;
+	}
+
+		.find-properties__h4 {
+		position: absolute;
+		top: 0%;
+		left: 34%;
+	}
+
+	.find-buyers__h4 {
+		position: absolute;
+		top: 0%;
+		left: 34%;
+	}
+
+	.find-properties__p {
+		position: absolute;
+		left: 34%;
+		top: 30%;
+	}
+
+	.find-buyers__p {
+		position: absolute;
+		left: 34%;
+		top: 30%;
+	}
+
+	.find-properties__btn {
+		position: absolute;
+    bottom: 10%;
+    left: 34%;
+	}
+
+	.find-buyers__btn {
+		position: absolute;
+    bottom: 10%;
+    left: 34%;
+    margin-left: 0;
+	}
+
+	.find-properties__img {
+		position: absolute;
+		float: none;
+		margin-left: 0;
+		left: 2%;
+	}
+
+	.find-buyers__img {
+		position: absolute;
+		float: none;
+		margin-left: 0;
+		left: 2%;
+	}
+}
 
 @media all and (max-width: 768px) {
 	.nav li a {
@@ -621,7 +690,7 @@ input.form-control-my {
 	}
 	.small-logo {
 		position: absolute;
-		left: 40%;
+		left: 37%;
 	}
 	.small-menu {
 		position: absolute;
@@ -676,6 +745,30 @@ input.form-control-my {
 		margin-right: 0;
 	}
 
+	.find-properties__h4 {
+		position: absolute;
+		top: 0%;
+		left: 34%;
+	}
+
+	.find-buyers__h4 {
+		position: absolute;
+		top: 0%;
+		left: 34%;
+	}
+
+	.find-properties__p {
+		position: absolute;
+		left: 34%;
+		top: 30%;
+	}
+
+	.find-buyers__p {
+		position: absolute;
+		left: 34%;
+		top: 30%;
+	}
+
 }
 
 // Feedback form
@@ -690,6 +783,11 @@ input.form-control-my {
 }
 
 @media all and (max-width: 605px) {
+
+	.find-properties__h4 {
+		margin-top: 10%;
+	}
+
 	.btn-default {
     width: 5em;
     font-size: 1em;
@@ -701,24 +799,41 @@ input.form-control-my {
     height: 2.5em;
 	}
 
+	.find-properties__wrap {
+		position: relative;
+	}
+
+	.find-buyers__wrap {
+		position: relative;
+	}
+
 	.find-properties__btn {
     width: 11em;
     font-size: 0.8em;
     height: 3em;
+    position: absolute;
+    bottom: 10%;
+    left: 34%;
 	}
 
 	.find-buyers__btn {
     width: 11em;
     font-size: 0.8em;
     height: 3em;
+    margin-left: 0;
+    position: absolute;
+    bottom: 10%;
+    left: 34%;
 	}
 
 	.find-properties__p {
 		font-size: 15px;
+		top: 25%;
 	}
 
 	.find-buyers__p {
 		font-size: 15px;
+		top: 25%;
 	}
 
 }
@@ -731,7 +846,6 @@ input.form-control-my {
 // Blocks find prop and find buyers
 @media all and (max-width: 515px) {
 	.find-properties__img {
-    margin: 90px 25px 0 15px;
     width: 25%;
 	}
     .find-properties__p {
@@ -740,7 +854,6 @@ input.form-control-my {
     overflow: hidden;
 	}
 	.find-buyers__img {
-    margin: 90px 40px 0 -2%;
     width: 20%;
 	}
 	.find-buyers__p {
@@ -749,11 +862,8 @@ input.form-control-my {
     overflow: hidden;
 	}
 	.find-buyers__btn {
-	margin: 5% 0 0 29%;
+	// margin: 5% 0 0 0;
 	}
-	// .find-properties__p {
- //    margin-left: 35%
-	// }
 }
 
 @media all and (max-width: 482px) {
@@ -763,11 +873,17 @@ input.form-control-my {
 	.about-project {
 		font-size: 1em;
 	}
-}
-
-@media all and (max-width: 482px) {
 	.find-buyers__h4 {
 		margin-top: 10%;
+	}
+}
+
+@media all and (max-width: 419px) {
+	.find-properties__btn {
+		margin-top: 10%;
+	}
+	.find-buyers__img {
+		margin-right: 14%;
 	}
 }
 
